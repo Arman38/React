@@ -1,0 +1,24 @@
+$imgWidth:1469px;
+$imgHeight:979px;
+
+.Wrapper{
+  overflow-x: hidden;
+}
+
+
+.GlobusContainer{
+    position: relative;
+   >img{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       right: -30%;
+       @media (max-width:995px) {
+          width: $imgWidth/1.8;
+          $imgHeight: $imgHeight/1.8;
+          top: 50%;
+          transform: translateY(-90%);
+          right: -30%;
+       }
+   }
+}

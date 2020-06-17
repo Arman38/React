@@ -1,0 +1,55 @@
+@import '../../var';
+.SliderContent{
+    min-height: 35rem;
+    background: $darkBgColor;
+    width: 100%;
+    .Slider{
+        overflow: hidden;
+        position: relative;
+        padding: 42px 50px 10px 72px;
+        .LittleGlobus{
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            animation: globus 15s ease infinite ;
+
+        }
+        h1{
+            text-align: center;
+            font-size: 52px;
+            color: white;
+        }
+        .Description{
+            width: 80%;
+            margin: 37px auto 0;
+            text-align: center;
+            color: #2578BE;
+        }
+        button{
+            display: block;
+            margin:0 auto;
+            margin-top: 3rem;
+        }
+        .Discover{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            color:white ;
+            margin: auto;
+            margin-top: 80px;
+            div{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@keyframes globus{
+    from{
+       transform:rotateZ(0) ;
+    };
+    to{
+        transform: rotateZ(360deg);
+    }
+}

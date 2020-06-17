@@ -1,0 +1,25 @@
+.Nav{
+    width: 100%;
+    align-self: flex-end;
+}
+
+.Ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    li{
+        width: 100%;
+        a{
+            display: block;
+            width: 100%;
+            text-align: right;
+            text-decoration: none;
+            padding:.1rem 1rem;
+            color: white;
+            &:hover{
+                color: steelblue;
+            }
+        }
+    }
+}

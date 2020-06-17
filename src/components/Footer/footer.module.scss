@@ -1,0 +1,39 @@
+@import "../../var";
+
+.Footer {
+  background: $darkBgColor;
+  color: white;
+  min-height: calc(100vh - 160px - 560px - 560px - 240px - 124px);
+  .InnerFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    > div {
+      margin-top: 100px;
+      margin-bottom: 64px;
+      justify-self: center;
+    }
+    .Location {
+      justify-self: flex-start;
+      .IconContainer {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10px;
+        i {
+          margin-right: 10px;
+        }
+      }
+      .Service {
+        margin-top: 5px;
+      }
+    }
+    .Follow {
+        background: url('../../assets//images//logo-final.png') center/cover no-repeat;
+      justify-self: normal;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

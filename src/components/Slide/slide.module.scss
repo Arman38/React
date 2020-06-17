@@ -1,0 +1,93 @@
+$rightContentWidth:450px;
+$rightContentChildWidth:130px;
+
+
+.SlideContent{
+    min-height: 35rem;
+    width: 100%;
+    background: #09121A;
+    color: white;
+    .Slide{
+        width: 90% !important;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:995px){
+            flex-direction: column;
+        }
+    }
+    .Left{
+        width: 35%;
+        margin-top: 110px;
+        @media (max-width:995px){
+           width: 100%;
+        }
+        h2{
+            text-shadow: 2px 2px 4px white;
+        }
+        .Description{
+            margin-top: 60px;
+        }
+        .Button{
+            margin-top: 50px;
+            margin-left: 15px;
+        }
+    }
+    .Right{
+        width: $rightContentWidth;
+        height: $rightContentWidth;
+        margin-top: 60px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        position: relative;
+        @media (max-width:995px){
+            max-width:995px ;
+            margin: 50px auto;
+         }
+        div{
+            width: $rightContentChildWidth;
+            height: $rightContentChildWidth;
+            border:1px solid gray;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #09121A;
+            &:hover{
+                background: #2578BE;
+                cursor: pointer;
+            }
+        }
+        .Seo1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .Seo2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .Seo3{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -$rightContentChildWidth/2;
+        }
+        .Seo4{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .Seo5{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .Seo6{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -$rightContentChildWidth/2;
+        }
+    }
+}
